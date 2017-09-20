@@ -60,7 +60,7 @@ When enabled, pods are assigned a DNS A record in the form of `pod-ip-address.my
 For example, a pod with ip `1.2.3.4` in the namespace `default` with a dns name of `cluster.local` would have an entry: `1-2-3-4.default.pod.cluster.local`.
 
 
-####A Records and hostname Based on Pod Annotations - A Beta Feature in Kubernetes v1.2
+#### A Records and hostname Based on Pod Annotations - A Beta Feature in Kubernetes v1.2
 Currently when a pod is created, its hostname is the Pod's `metadata.name` value.
 With v1.2, users can specify a Pod annotation, `pod.beta.kubernetes.io/hostname`, to specify what the Pod's hostname should be.
 If the annotation is specified, the annotation value takes precendence over the Pod's name, to be the hostname of the pod.
